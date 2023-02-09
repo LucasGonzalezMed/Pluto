@@ -18,8 +18,8 @@ public class ConexionMySQL {
         try {
             final String Controlador = "com.mysql.cj.jdbc.Driver";
             Class.forName(Controlador);
-            final String url_bd = "jdbc:mysql://us-east.connect.psdb.cloud:3306/plutodb";
-            conexion = DriverManager.getConnection(url_bd, "pwgpp38q9hydwnu5ry68", "pscale_pw_BvTn73zLBXCcioD9WYdGip8m7mIqeu4zEylMveOtdsy");
+            final String url_bd = "URL";
+            conexion = DriverManager.getConnection(url_bd, "username", "Password");
             sentencia = conexion.createStatement();
          
         } catch (ClassNotFoundException | SQLException ex) {
